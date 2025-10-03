@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Gummapu | Digital Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Abhishek Gummapu</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-lime-400 transition">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-lime-400 transition">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-lime-400 transition">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-lime-400 transition">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#about" class="block py-2 text-gray-300 hover:text-lime-400 transition">About</a>
+             <a href="#skills" class="block py-2 text-gray-300 hover:text-lime-400 transition">Skills</a>
+             <a href="#projects" class="block py-2 text-gray-300 hover:text-lime-400 transition">Projects</a>
+             <a href="#contact" class="block py-2 text-gray-300 hover:text-lime-400 transition">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 md:pt-32">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[70vh] flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 gradient-text">
+                Hi, I'm Abhishek Gummapu
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300">
+                <span id="typing-text"></span><span class="typing-cursor"></span>
+            </p>
+             <a href="#projects" class="mt-8 bg-lime-500 hover:bg-lime-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3">
+                    <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Abhishek's\nPhoto" alt="Abhishek Gummapu" class="rounded-full mx-auto shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-lime-500/50">
+                </div>
+                <div class="w-full md:w-2/3 text-lg text-center md:text-left">
+                    <p class="mb-4">
+                        Hello! I'm a passionate and aspiring web developer from Hyderabad, currently honing my skills in front-end technologies. I have a strong foundation in creating responsive, user-friendly websites and applications.
+                    </p>
+                    <p class="mb-4">
+                        I enjoy the challenge of turning an idea into a tangible, interactive digital experience. I am particularly interested in modern JavaScript frameworks and the endless possibilities they offer for building dynamic web solutions.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy keeping up with the latest tech trends, contributing to open-source projects, and exploring landscape photography.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <!-- Skill Item -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                    <svg class="w-16 h-16 mb-2 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10.5v-8h1v3.402A4.01 4.01 0 0 1 9 6.5a4 4 0 1 1-4 4 3.999 3.999 0 0 1 .5-2H5.5zm1-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                    <span class="text-lg font-medium">HTML5</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                    <svg class="w-16 h-16 mb-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm6.551 2.934a.332.332 0 0 0-.28.376l.332 1.325-.975.244a.332.332 0 0 0-.28.376l.332 1.325-.975.244a.332.332 0 0 0-.28.376l1.325 5.3a.332.332 0 0 0 .376.28l5.3-1.325a.332.332 0 0 0 .28-.376l-1.325-5.3a.332.332 0 0 0-.376-.28l-1.59.397-.332-1.325a.332.332 0 0 0-.376-.28l-1.59.397z"/></svg>
+                    <span class="text-lg font-medium">CSS3</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                     <svg class="w-16 h-16 mb-2 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.403 4.282a.5.5 0 0 0-.806.403l.25 1a.5.5 0 0 0 .806-.403l-.25-1zm.69 1.419a.5.5 0 0 0-.403.806l.25 1a.5.5 0 0 0 .806-.403l-.25-1zm-.69-2.838a.5.5 0 0 0-.806.403l.25 1a.5.5 0 0 0 .806-.403l-.25-1zm8.182-1.211a.5.5 0 0 0-.612.01l-1.687 1.266a.5.5 0 0 0-.1.658l.604.806a.5.5 0 0 0 .756.096l1.266-1.687a.5.5 0 0 0-.227-.849z"/></svg>
+                    <span class="text-lg font-medium">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                     <svg class="w-16 h-16 mb-2 text-sky-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM6.5 4.5a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm-1.135 1.832a.5.5 0 0 1 .633-.331l3.5 1a.5.5 0 0 1 0 .866l-3.5 1a.5.5 0 0 1-.633-.331V6.332zm1.267 4.336a.5.5 0 1 1-.5 0 .5.5 0 0 1 .5 0z"/></svg>
+                    <span class="text-lg font-medium">React</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                    <svg class="w-16 h-16 mb-2 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 1.5v2h5v-2h-5zm0 4v2h5v-2h-5zm0 4v2h5v-2h-5z"/></svg>
+                    <span class="text-lg font-medium">Tailwind CSS</span>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition transform hover:-translate-y-1">
+                    <svg class="w-16 h-16 mb-2 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.5 5.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V6h-5v.5a.5.5 0 0 1-1 0v-1zm-.5 3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/></svg>
+                    <span class="text-lg font-medium">Node.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300">
+                    <img src="https://placehold.co/600x400/111827/a8eb12?text=Study+Planner" alt="Smart Study Planner" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Smart Study Planner</h3>
+                        <p class="text-gray-400 mb-4">A web app to help students organize study schedules and track academic tasks using local storage to save progress.</p>
+                        <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300">
+                    <img src="https://placehold.co/600x400/111827/a8eb12?text=Weather+App" alt="Weather Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Dynamic Weather Dashboard</h3>
+                        <p class="text-gray-400 mb-4">A dashboard that fetches and displays real-time, location-based weather data from the OpenWeatherMap API.</p>
+                        <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300">
+                    <img src="https://placehold.co/600x400/111827/a8eb12?text=Quiz+Platform" alt="Online Quiz Application" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Online Quiz Application</h3>
+                        <p class="text-gray-400 mb-4">An interactive quiz app with multiple-choice questions, timers, and instant scoring to provide immediate feedback.</p>
+                        <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Get In Touch</h2>
+            <div class="max-w-lg mx-auto text-center">
+                 <p class="text-lg mb-8">
+                     I'm currently seeking new opportunities and collaborations. If you have a project in mind or just want to connect, feel free to reach out!
+                 </p>
+                 <a href="mailto:abhishek.gummapu@example.com" class="bg-lime-500 hover:bg-lime-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 inline-block">
+                     Contact Me
+                 </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 mt-20">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; 2025 Abhishek Gummapu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
